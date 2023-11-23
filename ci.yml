@@ -11,4 +11,4 @@ test:
 run:
   steps:
     - name: deploy
-      command: npx run preview
+      command: node .output/server/index.mjs
