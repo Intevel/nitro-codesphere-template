@@ -1,14 +1,14 @@
 prepare:
   steps:
     - name: install
-      command: npm install
+      command: npx --yes nypm install
     - name: build:types
-      command: nitropack prepare
+      command: npx nitropack prepare
     - name: build
-      command: nitropack build
+      command: npx nitropack build
 test:
   steps: []
 run:
   steps:
     - name: deploy
-      command: npm run preview
+      command: npx run preview
