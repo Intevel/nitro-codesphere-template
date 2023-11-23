@@ -6,6 +6,8 @@ prepare:
       command: nitropack prepare
     - name: build
       command: nitropack build
+test:
+  steps: []
 run:
   steps:
     - name: deploy
