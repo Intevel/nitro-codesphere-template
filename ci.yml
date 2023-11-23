@@ -1,0 +1,12 @@
+prepare:
+  steps:
+    - name: install
+      command: npm install
+    - name: build:types
+      command: nitropack prepare
+    - name: build
+      command: nitropack build
+run:
+  steps:
+    - name: deploy
+      command: npm run preview
